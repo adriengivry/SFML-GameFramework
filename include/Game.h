@@ -1,6 +1,9 @@
 #pragma once
 
-#include "GManager.h"
+#include "Controller.h"
+#include "GameInfo.h"
+#include "UserInterface.h"
+#include "Window.h"
 
 namespace PlatformerEngine
 {
@@ -12,5 +15,13 @@ namespace PlatformerEngine
 
 		void Setup() override;
 		void Update() override;
+		void Tick();
+		void Draw();
+
+	private:
+		GameInfo m_gameInfo;
+		Window m_window;
+		UserInterface m_userInterface;
+		Controller m_controller;
 	};
 }

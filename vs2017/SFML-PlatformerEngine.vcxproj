@@ -19,18 +19,26 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\src\Controller.cpp" />
     <ClCompile Include="..\src\Game.cpp" />
+    <ClCompile Include="..\src\GameInfo.cpp" />
     <ClCompile Include="..\src\GComponent.cpp" />
     <ClCompile Include="..\src\Main.cpp" />
     <ClCompile Include="..\src\GManager.cpp" />
     <ClCompile Include="..\src\GObject.cpp" />
+    <ClCompile Include="..\src\UserInterface.cpp" />
+    <ClCompile Include="..\src\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\include\Controller.h" />
     <ClInclude Include="..\include\Game.h" />
+    <ClInclude Include="..\include\GameInfo.h" />
     <ClInclude Include="..\include\GComponent.h" />
     <ClInclude Include="..\include\GManager.h" />
     <ClInclude Include="..\include\GObject.h" />
     <ClInclude Include="..\include\Resources.h" />
+    <ClInclude Include="..\include\UserInterface.h" />
+    <ClInclude Include="..\include\Window.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
