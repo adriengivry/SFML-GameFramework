@@ -1,8 +1,8 @@
 #include "Game.h"
 
-PlatformerEngine::Game::Game() : GManager()
+PlatformerEngine::Game::Game() : Manager()
 {
-	SetGameObjectType("GAME");
+	SetObjectType("GAME");
 	Game::Setup();
 }
 

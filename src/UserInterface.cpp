@@ -4,7 +4,7 @@ using namespace PlatformerEngine;
 
 UserInterface::UserInterface()
 {
-	SetGameObjectType("USER_INTERFACE");
+	SetObjectType("USER_INTERFACE");
 	UserInterface::Setup();
 }
 

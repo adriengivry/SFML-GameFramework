@@ -1,10 +1,10 @@
 #pragma once
 
-#include "GManager.h"
+#include "Manager.h"
 
 namespace PlatformerEngine
 {
-	class UserInterface : public GManager
+	class UserInterface : public Manager
 	{
 	public:
 		UserInterface();

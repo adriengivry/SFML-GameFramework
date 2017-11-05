@@ -1,10 +1,10 @@
 #pragma once
 
-#include "GManager.h"
+#include "Manager.h"
 
 namespace PlatformerEngine
 {
-	class GameInfo : public GManager
+	class GameInfo : public Manager
 	{
 	public:
 		GameInfo();

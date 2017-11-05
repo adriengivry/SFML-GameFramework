@@ -4,10 +4,11 @@
 #include "GameInfo.h"
 #include "UserInterface.h"
 #include "Window.h"
+#include "Manager.h"
 
 namespace PlatformerEngine
 {
-	class Game : public GManager
+	class Game : public Manager
 	{
 	public:
 		Game();

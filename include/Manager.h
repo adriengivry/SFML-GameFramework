@@ -1,14 +1,14 @@
 #pragma once
 
-#include "GObject.h"
+#include "Object.h"
 
 namespace PlatformerEngine
 {
-	class GManager : public GObject
+	class Manager : public Object
 	{
 	public:
-		GManager();
-		virtual ~GManager();
+		Manager();
+		virtual ~Manager();
 
 		virtual void Setup() = 0;
 		virtual void Update() = 0;

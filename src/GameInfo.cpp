@@ -4,7 +4,7 @@ using namespace PlatformerEngine;
 
 GameInfo::GameInfo()
 {
-	SetGameObjectType("GAME_INFO");
+	SetObjectType("GAME_INFO");
 	GameInfo::Setup();
 }
 

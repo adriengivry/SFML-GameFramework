@@ -4,7 +4,7 @@ using namespace PlatformerEngine;
 
 Window::Window()
 {
-	SetGameObjectType("WINDOW");
+	SetObjectType("WINDOW");
 	Window::Setup();
 }
 

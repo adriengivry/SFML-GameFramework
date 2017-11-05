@@ -1,31 +1,59 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="PlatformerEngine::Game" Collapsed="true">
-    <Position X="0.5" Y="3.25" Width="1.5" />
+    <Position X="2.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAACAAAAAAAAAAAAAAAAAiAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>CBQAAAAACAAAAgIAAAAAAAAAAAiAAEAAAAAAAAAAQAA=</HashCode>
       <FileName>C:\Users\adrie\Desktop\SFML-PlatformerEngine\include\Game.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="PlatformerEngine::GObject" Collapsed="true">
-    <Position X="1.75" Y="0.5" Width="1.5" />
+  <Class Name="PlatformerEngine::GComponent" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAggAAAABAAEQAAAAAgQAAIABAAAAA=</HashCode>
-      <FileName>C:\Users\adrie\Desktop\SFML-PlatformerEngine\include\GObject.h</FileName>
+      <HashCode>ABAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\adrie\Desktop\SFML-PlatformerEngine\include\GComponent.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="PlatformerEngine::GManager" Collapsed="true">
-    <Position X="0.5" Y="1.75" Width="1.5" />
+    <Position X="7.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQBAAAACAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
       <FileName>C:\Users\adrie\Desktop\SFML-PlatformerEngine\include\GManager.h</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="PlatformerEngine::GComponent" Collapsed="true">
-    <Position X="2.75" Y="1.75" Width="1.5" />
+  <Class Name="PlatformerEngine::GObject" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ABAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>C:\Users\adrie\Desktop\SFML-PlatformerEngine\include\GComponent.h</FileName>
+      <HashCode>AAAAAAAAAAAAAAAggAAAABAAEQAAAAAgQAAIABAAAAA=</HashCode>
+      <FileName>C:\Users\adrie\Desktop\SFML-PlatformerEngine\include\GObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlatformerEngine::GameInfo" Collapsed="true">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQIMAAAKAAAAAABAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\adrie\Desktop\SFML-PlatformerEngine\include\GameInfo.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlatformerEngine::UserInterface" Collapsed="true">
+    <Position X="11.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQAAACACAAAAgAAAAAAAAAAACAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\adrie\Desktop\SFML-PlatformerEngine\include\UserInterface.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlatformerEngine::Window" Collapsed="true">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAACAAAAAAAAAAAAAAAAQAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>C:\Users\adrie\Desktop\SFML-PlatformerEngine\include\Window.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlatformerEngine::Controller" Collapsed="true">
+    <Position X="9.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAACQAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>C:\Users\adrie\Desktop\SFML-PlatformerEngine\include\Controller.h</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

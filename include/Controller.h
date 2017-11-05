@@ -1,10 +1,10 @@
 #pragma once
 
-#include "GManager.h"
+#include "Manager.h"
 
 namespace PlatformerEngine
 {
-	class Controller : public GManager
+	class Controller : public Manager
 	{
 	public:
 		Controller();

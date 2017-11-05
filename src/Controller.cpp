@@ -4,7 +4,7 @@ using namespace PlatformerEngine;
 
 Controller::Controller()
 {
-	SetGameObjectType("CONTROLLER");
+	SetObjectType("CONTROLLER");
 	Controller::Setup();
 }
 
