@@ -2,18 +2,18 @@
 
 using namespace PlatformerEngine;
 
-uint32_t Object::s_objectCounter = 0;
-uint32_t Object::s_objectTotalCounter = 0;
+uint32_t Object::__OBJECT_COUNTER = 0;
+uint32_t Object::__OBJECT_TOTAL_COUNTER = 0;
 
 Object::Object()
 {
 	SetObjectType("OBJECT");
 
-	m_objectId = s_objectTotalCounter++;
-	++s_objectCounter;
+	m_objectId = __OBJECT_TOTAL_COUNTER++;
+	++__OBJECT_COUNTER;
 }
 
 Object::~Object()
 {
-	--s_objectCounter;
+	--__OBJECT_COUNTER;
 }

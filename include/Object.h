@@ -10,6 +10,10 @@ namespace PlatformerEngine
 	class Object
 	{
 	public:
+		static uint32_t __OBJECT_COUNTER;
+		static uint32_t __OBJECT_TOTAL_COUNTER;
+
+	public:
 		Object();
 		virtual ~Object();
 
@@ -21,10 +25,6 @@ namespace PlatformerEngine
 
 	protected:
 		std::string m_objectType;
-
-		static uint32_t s_objectCounter;
-		static uint32_t s_objectTotalCounter;
-
 		uint32_t m_objectId;
 	};
 }

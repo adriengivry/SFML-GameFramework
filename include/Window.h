@@ -7,6 +7,10 @@ namespace PlatformerEngine
 	class Window : public Manager
 	{
 	public:
+		static const uint16_t __DEFAULT_WIDTH = 1280;
+		static const uint16_t __DEFAULT_HEIGHT = 720;
+
+	public:
 		Window();
 		virtual ~Window();
 
