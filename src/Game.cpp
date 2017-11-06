@@ -15,21 +15,55 @@ void PlatformerEngine::Game::Setup()
 	// TODO: Init game managers
 }
 
+void PlatformerEngine::Game::Run()
+{
+	while (m_window.IsOpen())
+	{
+		Update();
+	}
+}
+
 void PlatformerEngine::Game::Update()
 {
-	// TODO: Call every managers update methods
+	HandleEvents();
+
+	m_window.Update();
+	m_gameInfo.Update();
+	m_userInterface.Update();
+	m_controller.Update();
+
+	Tick();
+
+	m_userInterface.Draw();
 }
 
 void PlatformerEngine::Game::Tick()
 {
-	m_gameInfo.Update();
-	m_window.Update();
-	m_userInterface.Update();
-	m_controller.Update();
-
+	// TODO: Game Tick
 }
 
 void PlatformerEngine::Game::Draw()
 {
 	m_userInterface.Draw();
+}
+
+void PlatformerEngine::Game::HandleEvents()
+{
+	sf::Event event;
+
+	while (m_window.PollEvent(event))
+	{
+		switch (event.type)
+		{
+		case sf::Event::Resized:
+			m_window.ApplyLetterBoxView();
+			break;
+
+		case sf::Event::Closed:
+			m_window.Close();
+
+		default:
+			break;
+		}
+	}
 }

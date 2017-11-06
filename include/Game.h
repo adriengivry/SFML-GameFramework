@@ -16,8 +16,12 @@ namespace PlatformerEngine
 
 		void Setup() override;
 		void Update() override;
+
+		void Run();
 		void Tick();
 		void Draw();
+
+		void HandleEvents();
 
 	private:
 		GameInfo m_gameInfo;

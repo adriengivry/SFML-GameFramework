@@ -25,5 +25,7 @@ void UserInterface::Update()
 void UserInterface::Draw()
 {
 	if (IsDrawable())
-		Draw();
+	{
+		// TODO: Draw User interface
+	}
 }
