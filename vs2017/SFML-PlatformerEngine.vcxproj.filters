@@ -77,7 +77,7 @@
     <ClInclude Include="..\include\Object.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Utility.h">
+    <ClInclude Include="..\include\Utility.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

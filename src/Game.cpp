@@ -1,5 +1,4 @@
 #include "Game.h"
-#include "../vs2017/Utility.h"
 
 PlatformerEngine::Game::Game() : Manager()
 {
@@ -22,12 +21,16 @@ void PlatformerEngine::Game::Run()
 	m_sprite.setTexture(m_texture);
 
 	while (m_window.IsOpen())
+	{
 		Update();
+	}
 }
 
 void PlatformerEngine::Game::Update()
 {
 	HandleEvents();
+
+	m_gameInfo.Update();
 
 	m_window.Clear();
 

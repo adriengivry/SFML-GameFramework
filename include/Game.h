@@ -5,6 +5,7 @@
 #include "UserInterface.h"
 #include "Window.h"
 #include "Manager.h"
+#include "Utility.h"
 
 namespace PlatformerEngine
 {

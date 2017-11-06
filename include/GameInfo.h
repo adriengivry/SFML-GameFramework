@@ -1,5 +1,9 @@
 #pragma once
 
+#include <iostream>
+
+#include <SFML/System/Clock.hpp>
+
 #include "Manager.h"
 
 namespace PlatformerEngine
@@ -11,11 +15,14 @@ namespace PlatformerEngine
 		virtual ~GameInfo();
 		
 		void Update() override;
+		void CalculateDeltaTime();
+
+		const float& GetDeltaTime() const { return m_deltaTime; }
 
 	private:
 		void Setup() override;
 
-		void CalculateDeltaTime();
+		sf::Clock m_clock;
 
 		float m_lastTime;
 		float m_thisTime;

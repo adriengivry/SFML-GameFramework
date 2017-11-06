@@ -24,11 +24,30 @@ void Window::DrawThing(sf::Drawable& p_toDraw)
 	m_renderWindow.draw(p_toDraw);
 }
 
+void Window::Clear()
+{
+	m_renderWindow.clear();
+	DrawView();
+}
+
+void Window::DrawView()
+{
+	m_viewRect.setSize(sf::Vector2f(m_view.getSize().x, m_view.getSize().y));
+	m_viewRect.setFillColor(sf::Color::Blue);
+	DrawThing(m_viewRect);
+}
+
+void Window::Display()
+{
+	m_renderWindow.display();
+}
+
 void Window::Setup()
 {
-	m_renderWindow.create(sf::VideoMode(__WINDOW_WIDTH, __WINDOW_HEIGHT), "SFML 2D Platformer Engine");
+	m_renderWindow.create(sf::VideoMode(__WINDOW_WIDTH, __WINDOW_HEIGHT), "SFML 2D Platformer Engine", __ENABLE_FULLSCREEN ? sf::Style::Fullscreen : sf::Style::Default);
 	m_renderWindow.setVerticalSyncEnabled(__ENABLE_VSYNC);
 	m_renderWindow.setFramerateLimit(__CURRENT_FRAMERATE);
+	
 
 	m_view = m_renderWindow.getView();
 }
