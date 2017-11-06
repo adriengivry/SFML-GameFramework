@@ -10,7 +10,7 @@ namespace GameFramework
 	{
 	public:
 		Sprite();
-		~Sprite() {}
+		~Sprite();
 
 		sf::Sprite& GetSprite() const { return *m_sprite; }
 

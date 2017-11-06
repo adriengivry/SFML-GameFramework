@@ -19,8 +19,7 @@ void Game::Setup()
 
 void Game::Run()
 {
-	m_texture.loadFromFile(LoadAsset("test.png"));
-	m_sprite.setTexture(m_texture);
+	m_player.GetSprite().Load(LoadAsset("test.png"));
 
 	while (m_window.IsOpen())
 	{
@@ -38,7 +37,7 @@ void Game::Update()
 
 	Tick();
 	
-	m_window.DrawThing(m_sprite);
+	m_window.DrawThing(m_player.GetSprite().GetSprite());
 
 	m_window.Display();
 	

@@ -7,6 +7,8 @@
 #include "Manager.h"
 #include "Utility.h"
 
+#include "Player.h"
+
 namespace GameFramework
 {
 	class Game : public Manager
@@ -30,7 +32,6 @@ namespace GameFramework
 		UserInterface m_userInterface;
 		Controller m_controller;
 
-		sf::Texture m_texture;
-		sf::Sprite m_sprite;
+		Player m_player;
 	};
 }
