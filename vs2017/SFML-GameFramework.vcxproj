@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\src\Actor.cpp" />
     <ClCompile Include="..\src\Controller.cpp" />
     <ClCompile Include="..\src\Game.cpp" />
     <ClCompile Include="..\src\GameInfo.cpp" />
@@ -26,18 +27,23 @@
     <ClCompile Include="..\src\Main.cpp" />
     <ClCompile Include="..\src\Manager.cpp" />
     <ClCompile Include="..\src\Object.cpp" />
+    <ClCompile Include="..\src\Player.cpp" />
+    <ClCompile Include="..\src\Sprite.cpp" />
     <ClCompile Include="..\src\SpriteManager.cpp" />
     <ClCompile Include="..\src\UserInterface.cpp" />
     <ClCompile Include="..\src\Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\include\Actor.h" />
     <ClInclude Include="..\include\Controller.h" />
     <ClInclude Include="..\include\Game.h" />
     <ClInclude Include="..\include\GameInfo.h" />
     <ClInclude Include="..\include\Component.h" />
     <ClInclude Include="..\include\Manager.h" />
     <ClInclude Include="..\include\Object.h" />
+    <ClInclude Include="..\include\Player.h" />
     <ClInclude Include="..\include\Resources.h" />
+    <ClInclude Include="..\include\Sprite.h" />
     <ClInclude Include="..\include\SpriteManager.h" />
     <ClInclude Include="..\include\UserInterface.h" />
     <ClInclude Include="..\include\Utility.h" />
