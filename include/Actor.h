@@ -9,7 +9,7 @@ namespace GameFramework
 	{
 	public:
 		Actor();
-		virtual ~Actor() = 0;
+		virtual ~Actor() = default;
 
 		virtual void Display() = 0;
 

@@ -14,6 +14,7 @@ namespace GameFramework
 {
 	class Player : public Actor
 	{
+	public:
 		Player();
 		~Player() {}
 
