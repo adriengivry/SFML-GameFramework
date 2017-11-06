@@ -2,12 +2,12 @@
 
 using namespace PlatformerEngine;
 
-uint16_t Window::__WINDOW_WIDTH		= WINDOW_DEFAULT_WIDTH;
-uint16_t Window::__WINDOW_HEIGHT	= WINDOW_DEFAULT_HEIGHT;
+uint16_t	Window::__WINDOW_WIDTH		=	WINDOW_DEFAULT_WIDTH;
+uint16_t	Window::__WINDOW_HEIGHT		=	WINDOW_DEFAULT_HEIGHT;
 
-bool Window::__ENABLE_FULLSCREEN	= WINDOW_ENABLE_FULLSCREEN;
-bool Window::__ENABLE_VSYNC			= WINDOW_ENBABLE_VSYNC;
-uint8_t	Window::__CURRENT_FRAMERATE = DEFAULT_FRAMERATE;
+bool		Window::__ENABLE_FULLSCREEN	=	WINDOW_ENABLE_FULLSCREEN;
+bool		Window::__ENABLE_VSYNC		=	WINDOW_ENBABLE_VSYNC;
+uint8_t		Window::__CURRENT_FRAMERATE	=	DEFAULT_FRAMERATE;
 
 Window::Window()
 {
@@ -17,6 +17,11 @@ Window::Window()
 
 Window::~Window()
 {
+}
+
+void Window::DrawThing(sf::Drawable& p_toDraw)
+{
+	m_renderWindow.draw(p_toDraw);
 }
 
 void Window::Setup()
@@ -30,14 +35,16 @@ void Window::Setup()
 
 void Window::Update()
 {
-	m_renderWindow.clear(sf::Color::Red);
-	m_renderWindow.display();
 }
 
-void Window::ApplyLetterBoxView()
+void Window::ApplyLetterBoxView(const uint16_t p_windowWidth, const uint16_t p_windowHeight)
 {
-	const float windowRatio = __WINDOW_WIDTH / __WINDOW_HEIGHT;
-	const float viewRatio = m_view.getSize().x / m_renderWindow.getSize().y;
+	__WINDOW_WIDTH	= p_windowWidth;
+	__WINDOW_HEIGHT = p_windowHeight;
+
+	const float windowRatio = __WINDOW_WIDTH / static_cast<float>(__WINDOW_HEIGHT);
+	const float viewRatio = m_view.getSize().x / static_cast<float>(m_renderWindow.getSize().y);
+
 	float sizeX = 1.0f;
 	float sizeY = 1.0f;
 	float posX = 0.0f;
@@ -59,6 +66,5 @@ void Window::ApplyLetterBoxView()
 	}
 
 	m_view.setViewport(sf::FloatRect(posX, posY, sizeX, sizeY));
-
-	// TODO: FloatRect optimization
+	m_renderWindow.setView(m_view);
 }

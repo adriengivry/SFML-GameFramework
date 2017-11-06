@@ -9,3 +9,5 @@
 #define DEFAULT_FRAMERATE 60;
 
 #define DEBUG_DISPLAY true
+
+#define ASSETS_PATH "../assets/"

@@ -41,6 +41,7 @@
     <ClInclude Include="..\include\SpriteManager.h" />
     <ClInclude Include="..\include\UserInterface.h" />
     <ClInclude Include="..\include\Window.h" />
+    <ClInclude Include="Utility.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />

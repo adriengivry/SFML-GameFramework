@@ -28,5 +28,8 @@ namespace PlatformerEngine
 		Window m_window;
 		UserInterface m_userInterface;
 		Controller m_controller;
+
+		sf::Texture m_texture;
+		sf::Sprite m_sprite;
 	};
 }

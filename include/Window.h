@@ -1,5 +1,7 @@
 #pragma once
 
+#include <iostream>
+
 #include <SFML/Graphics.hpp>
 
 #include "Manager.h"
@@ -21,12 +23,15 @@ namespace PlatformerEngine
 		virtual ~Window();
 
 		void Update() override;
-		void ApplyLetterBoxView();
+		void ApplyLetterBoxView(const uint16_t p_windowWidth, const uint16_t p_windowHeight);
 
 		sf::RenderWindow& GetRenderWindow() { return m_renderWindow; }
 		bool IsOpen() const { return m_renderWindow.isOpen(); }
 		void Close() { m_renderWindow.close(); }
 		bool PollEvent(sf::Event& p_event) { return m_renderWindow.pollEvent(p_event); }
+		void DrawThing(sf::Drawable& p_toDraw);
+		void Clear() { m_renderWindow.clear(); }
+		void Display() { m_renderWindow.display(); }
 	private:
 		void Setup() override;
 

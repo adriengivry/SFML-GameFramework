@@ -1,4 +1,5 @@
 #include "Game.h"
+#include "../vs2017/Utility.h"
 
 PlatformerEngine::Game::Game() : Manager()
 {
@@ -17,24 +18,25 @@ void PlatformerEngine::Game::Setup()
 
 void PlatformerEngine::Game::Run()
 {
+	m_texture.loadFromFile(LoadAsset("test.png"));
+	m_sprite.setTexture(m_texture);
+
 	while (m_window.IsOpen())
-	{
 		Update();
-	}
 }
 
 void PlatformerEngine::Game::Update()
 {
 	HandleEvents();
 
-	m_window.Update();
-	m_gameInfo.Update();
-	m_userInterface.Update();
-	m_controller.Update();
+	m_window.Clear();
 
 	Tick();
+	
+	m_window.DrawThing(m_sprite);
 
-	m_userInterface.Draw();
+	m_window.Display();
+	
 }
 
 void PlatformerEngine::Game::Tick()
@@ -56,7 +58,7 @@ void PlatformerEngine::Game::HandleEvents()
 		switch (event.type)
 		{
 		case sf::Event::Resized:
-			m_window.ApplyLetterBoxView();
+			m_window.ApplyLetterBoxView(event.size.width, event.size.height);
 			break;
 
 		case sf::Event::Closed:
