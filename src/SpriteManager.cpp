@@ -1,6 +1,6 @@
 #include "SpriteManager.h"
 
-using namespace PlatformerEngine;
+using namespace GameFramework;
 
 SpriteManager::SpriteManager() : Manager()
 {

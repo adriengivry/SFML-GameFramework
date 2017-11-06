@@ -1,6 +1,6 @@
 #include "GameInfo.h"
 
-using namespace PlatformerEngine;
+using namespace GameFramework;
 
 GameInfo::GameInfo()
 {

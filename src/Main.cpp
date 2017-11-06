@@ -2,7 +2,7 @@
 
 #include "Game.h"
 
-using namespace PlatformerEngine;
+using namespace GameFramework;
 
 int main()
 {

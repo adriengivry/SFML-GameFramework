@@ -1,21 +1,23 @@
 #include "Game.h"
 
-PlatformerEngine::Game::Game() : Manager()
+using namespace GameFramework;
+
+Game::Game() : Manager()
 {
 	SetObjectType("GAME");
 	Game::Setup();
 }
 
-PlatformerEngine::Game::~Game()
+Game::~Game()
 {
 }
 
-void PlatformerEngine::Game::Setup()
+void Game::Setup()
 {
 	// TODO: Init game managers
 }
 
-void PlatformerEngine::Game::Run()
+void Game::Run()
 {
 	m_texture.loadFromFile(LoadAsset("test.png"));
 	m_sprite.setTexture(m_texture);
@@ -26,7 +28,7 @@ void PlatformerEngine::Game::Run()
 	}
 }
 
-void PlatformerEngine::Game::Update()
+void Game::Update()
 {
 	HandleEvents();
 
@@ -42,17 +44,17 @@ void PlatformerEngine::Game::Update()
 	
 }
 
-void PlatformerEngine::Game::Tick()
+void Game::Tick()
 {
 	// TODO: Game Tick
 }
 
-void PlatformerEngine::Game::Draw()
+void Game::Draw()
 {
 	m_userInterface.Draw();
 }
 
-void PlatformerEngine::Game::HandleEvents()
+void Game::HandleEvents()
 {
 	sf::Event event;
 

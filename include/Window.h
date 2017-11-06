@@ -6,7 +6,7 @@
 
 #include "Manager.h"
 
-namespace PlatformerEngine
+namespace GameFramework
 {
 	class Window : public Manager
 	{

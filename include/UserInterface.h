@@ -2,7 +2,7 @@
 
 #include "Manager.h"
 
-namespace PlatformerEngine
+namespace GameFramework
 {
 	class UserInterface : public Manager
 	{

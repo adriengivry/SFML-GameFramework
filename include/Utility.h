@@ -2,7 +2,7 @@
 
 #include <string>
 
-namespace PlatformerEngine
+namespace GameFramework
 {
 	inline std::string LoadAsset(const std::string p_path = "")
 	{

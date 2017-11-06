@@ -1,6 +1,6 @@
 #include "Object.h"
 
-using namespace PlatformerEngine;
+using namespace GameFramework;
 
 uint32_t Object::__OBJECT_COUNTER = 0;
 uint32_t Object::__OBJECT_TOTAL_COUNTER = 0;

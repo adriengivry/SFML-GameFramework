@@ -1,6 +1,6 @@
 #include "Window.h"
 
-using namespace PlatformerEngine;
+using namespace GameFramework;
 
 uint16_t	Window::__WINDOW_WIDTH		=	WINDOW_DEFAULT_WIDTH;
 uint16_t	Window::__WINDOW_HEIGHT		=	WINDOW_DEFAULT_HEIGHT;

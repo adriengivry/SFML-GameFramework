@@ -1,6 +1,6 @@
 #include "UserInterface.h"
 
-using namespace PlatformerEngine;
+using namespace GameFramework;
 
 UserInterface::UserInterface()
 {

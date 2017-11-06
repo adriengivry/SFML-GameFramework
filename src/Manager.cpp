@@ -1,6 +1,6 @@
 #include "Manager.h"
 
-using namespace PlatformerEngine;
+using namespace GameFramework;
 
 Manager::Manager() : Object()
 {

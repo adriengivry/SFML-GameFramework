@@ -7,7 +7,7 @@
 #include "Manager.h"
 #include "Utility.h"
 
-namespace PlatformerEngine
+namespace GameFramework
 {
 	class Game : public Manager
 	{

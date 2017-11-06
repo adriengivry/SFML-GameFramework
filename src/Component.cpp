@@ -1,10 +1,10 @@
 #include "Component.h"
 
-PlatformerEngine::Component::Component() : Object()
+GameFramework::Component::Component() : Object()
 {
 	SetObjectType("COMPONENT");
 }
 
-PlatformerEngine::Component::~Component()
+GameFramework::Component::~Component()
 {
 }

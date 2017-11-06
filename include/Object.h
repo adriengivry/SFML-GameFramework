@@ -5,7 +5,7 @@
 
 #include "Resources.h"
 
-namespace PlatformerEngine
+namespace GameFramework
 {
 	class Object
 	{

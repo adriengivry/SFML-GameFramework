@@ -2,7 +2,7 @@
 
 #include "Object.h"
 
-namespace PlatformerEngine
+namespace GameFramework
 {
 	class Manager : public Object
 	{

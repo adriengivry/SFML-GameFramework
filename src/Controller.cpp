@@ -1,6 +1,6 @@
 #include "Controller.h"
 
-using namespace PlatformerEngine;
+using namespace GameFramework;
 
 Controller::Controller()
 {
