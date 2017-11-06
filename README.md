@@ -9,4 +9,4 @@ After trying the Cinder library, I decided to come back to the SFML to create my
 
 ## Class diagram
 
-![Alt text](/vs2017/ClassDiagram.png?raw=true "Optional Title")
+<img src="vs2017/ClassDiagram.png" alt="ClassDiagram">
