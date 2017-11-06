@@ -43,28 +43,21 @@ void Window::ApplyLetterBoxView(const uint16_t p_windowWidth, const uint16_t p_w
 	__WINDOW_HEIGHT = p_windowHeight;
 
 	const float windowRatio = __WINDOW_WIDTH / static_cast<float>(__WINDOW_HEIGHT);
-	const float viewRatio = m_view.getSize().x / static_cast<float>(m_renderWindow.getSize().y);
+	const float viewRatio = m_view.getSize().x / static_cast<float>(m_view.getSize().y);
 
-	float sizeX = 1.0f;
-	float sizeY = 1.0f;
-	float posX = 0.0f;
-	float posY = 0.0f;
-	bool horizontalSpacing = true;
+	sf::FloatRect rect(0.0f, 0.0f, 1.0f, 1.0f);
 
-	if (windowRatio < viewRatio)
-		horizontalSpacing = false;
-
-	if (horizontalSpacing)
+	if (!(windowRatio < viewRatio))
 	{
-		sizeX = viewRatio / windowRatio;
-		posX = (1 - sizeX) / 2.0f;
+		rect.width = viewRatio / windowRatio;
+		rect.left = (1 - rect.width) / 2.0f;
 	}
 	else
 	{
-		sizeY = windowRatio / viewRatio;
-		posY = (1 - sizeY) / 2.0f;
+		rect.height = windowRatio / viewRatio;
+		rect.top = (1 - rect.height) / 2.0f;
 	}
 
-	m_view.setViewport(sf::FloatRect(posX, posY, sizeX, sizeY));
+	m_view.setViewport(rect);
 	m_renderWindow.setView(m_view);
 }
