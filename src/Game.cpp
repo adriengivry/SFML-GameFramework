@@ -12,9 +12,10 @@ Game::~Game()
 {
 }
 
+
 void Game::Setup()
 {
-	// TODO: Init game managers
+	m_controller = new Controller(this);
 }
 
 void Game::Run()
@@ -29,7 +30,7 @@ void Game::Run()
 
 void Game::Update()
 {
-	HandleEvents();
+	m_controller->Update();
 
 	m_gameInfo.Update();
 
@@ -45,31 +46,10 @@ void Game::Update()
 
 void Game::Tick()
 {
-	// TODO: Game Tick
+	m_player.Tick();
 }
 
 void Game::Draw()
 {
 	m_userInterface.Draw();
-}
-
-void Game::HandleEvents()
-{
-	sf::Event event;
-
-	while (m_window.PollEvent(event))
-	{
-		switch (event.type)
-		{
-		case sf::Event::Resized:
-			m_window.ApplyLetterBoxView(event.size.width, event.size.height);
-			break;
-
-		case sf::Event::Closed:
-			m_window.Close();
-
-		default:
-			break;
-		}
-	}
 }

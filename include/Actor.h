@@ -13,6 +13,8 @@ namespace GameFramework
 
 		virtual void Display() = 0;
 
+		virtual void Tick() = 0;
+
 	};
 
 }

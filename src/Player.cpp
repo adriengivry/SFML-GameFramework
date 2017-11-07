@@ -12,7 +12,19 @@ void Player::Display()
 	// TODO: Player Display
 }
 
+void Player::Tick()
+{
+	Move(m_direction);
+}
+
 void Player::Move(const Direction p_direction)
 {
-	// TODO: Player move
+	if (p_direction == Direction::RIGHT)
+	{
+		GetSprite().GetSprite().move(m_speed, 0);
+	}
+	else if (p_direction == Direction::LEFT)
+	{
+		GetSprite().GetSprite().move(-m_speed, 0);
+	}
 }

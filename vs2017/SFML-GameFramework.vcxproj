@@ -39,9 +39,11 @@
     <ClInclude Include="..\include\Game.h" />
     <ClInclude Include="..\include\GameInfo.h" />
     <ClInclude Include="..\include\Component.h" />
+    <ClInclude Include="..\include\ICommand.h" />
     <ClInclude Include="..\include\Manager.h" />
     <ClInclude Include="..\include\Object.h" />
     <ClInclude Include="..\include\Player.h" />
+    <ClInclude Include="..\include\PlayerCommand.h" />
     <ClInclude Include="..\include\Resources.h" />
     <ClInclude Include="..\include\Sprite.h" />
     <ClInclude Include="..\include\SpriteManager.h" />

@@ -11,6 +11,8 @@
 
 namespace GameFramework
 {
+	class Controller;
+
 	class Game : public Manager
 	{
 	public:
@@ -24,13 +26,15 @@ namespace GameFramework
 		void Tick();
 		void Draw();
 
-		void HandleEvents();
+		Player& GetPlayer() { return m_player; }
+
+		Window& GetWindow() { return m_window; }
 
 	private:
 		GameInfo m_gameInfo;
 		Window m_window;
 		UserInterface m_userInterface;
-		Controller m_controller;
+		Controller* m_controller;
 
 		Player m_player;
 	};

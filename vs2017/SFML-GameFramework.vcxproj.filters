@@ -98,6 +98,12 @@
     <ClInclude Include="..\include\Sprite.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\include\ICommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PlayerCommand.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
