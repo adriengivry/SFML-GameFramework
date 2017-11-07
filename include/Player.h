@@ -9,8 +9,6 @@ namespace GameFramework
 	{
 		RIGHT,
 		LEFT,
-		UP,
-		DOWN
 	};
 
 	class Player : public Actor
