@@ -26,6 +26,7 @@
     <ClCompile Include="..\src\Component.cpp" />
     <ClCompile Include="..\src\Main.cpp" />
     <ClCompile Include="..\src\Manager.cpp" />
+    <ClCompile Include="..\src\Movable.cpp" />
     <ClCompile Include="..\src\Object.cpp" />
     <ClCompile Include="..\src\Player.cpp" />
     <ClCompile Include="..\src\Sprite.cpp" />
@@ -36,11 +37,13 @@
   <ItemGroup>
     <ClInclude Include="..\include\Actor.h" />
     <ClInclude Include="..\include\Controller.h" />
+    <ClInclude Include="..\include\Drawable.h" />
     <ClInclude Include="..\include\Game.h" />
     <ClInclude Include="..\include\GameInfo.h" />
     <ClInclude Include="..\include\Component.h" />
     <ClInclude Include="..\include\ICommand.h" />
     <ClInclude Include="..\include\Manager.h" />
+    <ClInclude Include="..\include\Movable.h" />
     <ClInclude Include="..\include\Object.h" />
     <ClInclude Include="..\include\Player.h" />
     <ClInclude Include="..\include\PlayerCommand.h" />

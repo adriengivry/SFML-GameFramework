@@ -30,9 +30,11 @@ namespace GameFramework
 
 	ADD_PLAYER_COMMAND(MoveLeft,
 		GetTarget().SetDirection(Direction::LEFT);
+		GetTarget().StartMoving();
 	)
 
 	ADD_PLAYER_COMMAND(MoveRight,
 		GetTarget().SetDirection(Direction::RIGHT);
+		GetTarget().StartMoving();
 	)
 }

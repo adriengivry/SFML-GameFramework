@@ -34,6 +34,8 @@ void Game::Update()
 
 	m_gameInfo.Update();
 
+	m_player.Update();
+
 	m_window.Clear();
 
 	Tick();
@@ -46,7 +48,7 @@ void Game::Update()
 
 void Game::Tick()
 {
-	m_player.Tick();
+	// TODO: Game tick
 }
 
 void Game::Draw()

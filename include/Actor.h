@@ -11,9 +11,13 @@ namespace GameFramework
 		Actor();
 		virtual ~Actor() = default;
 
-		virtual void Display() = 0;
+		virtual void Update();
 
 		virtual void Tick() = 0;
+
+	protected:
+		bool m_isUpdatable;
+		bool m_isTickable;
 
 	};
 
