@@ -1,108 +1,122 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="GameFramework::Actor" Collapsed="true">
-    <Position X="0.5" Y="1.75" Width="1.5" />
+    <Position X="1.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAgAAEAAAAAQAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <HashCode>AAQAAAAAAAAAgAAEAAAAAAAAAAAAAAAAAACAAgAAQAA=</HashCode>
       <FileName>C:\Users\adrie\Desktop\GIT_PROJECTS\SFML-GameFramework\include\Actor.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GameFramework::Game" Collapsed="true">
-    <Position X="9.5" Y="3.25" Width="1.5" />
+    <Position X="3.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>CBQAAAAACAAAAgIAAAEEAAAAAAiAAEAAAAAAAACAQAI=</HashCode>
       <FileName>C:\Users\adrie\Desktop\GIT_PROJECTS\SFML-GameFramework\include\Game.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GameFramework::Controller" Collapsed="true">
-    <Position X="14" Y="3.25" Width="1.5" />
+    <Position X="8" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>EAQAAAAACQAkAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
       <FileName>C:\Users\adrie\Desktop\GIT_PROJECTS\SFML-GameFramework\include\Controller.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GameFramework::GameInfo" Collapsed="true">
-    <Position X="18.5" Y="3.25" Width="1.5" />
+    <Position X="12.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQIMAABKAAAAQABAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>C:\Users\adrie\Desktop\GIT_PROJECTS\SFML-GameFramework\include\GameInfo.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GameFramework::Component" Collapsed="true">
-    <Position X="4" Y="1.75" Width="1.5" />
+    <Position X="18.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
       <FileName>C:\Users\adrie\Desktop\GIT_PROJECTS\SFML-GameFramework\include\Component.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GameFramework::ICommand" Collapsed="true">
-    <Position X="2.75" Y="3.25" Width="1.5" />
+    <Position X="17" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAEAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>C:\Users\adrie\Desktop\GIT_PROJECTS\SFML-GameFramework\include\ICommand.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GameFramework::Manager" Collapsed="true">
-    <Position X="13" Y="1.75" Width="1.5" />
+    <Position X="9.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAAAACAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAgAA=</HashCode>
       <FileName>C:\Users\adrie\Desktop\GIT_PROJECTS\SFML-GameFramework\include\Manager.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GameFramework::Object" Collapsed="true">
-    <Position X="9.5" Y="0.5" Width="1.5" />
+    <Position X="10.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>IAACAAAAAYAAAAAgAAAAAAAQAAAAAAAAAAAIIAAAAIA=</HashCode>
       <FileName>C:\Users\adrie\Desktop\GIT_PROJECTS\SFML-GameFramework\include\Object.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GameFramework::Player" Collapsed="true">
-    <Position X="0.5" Y="3.25" Width="1.5" />
+    <Position X="0.5" Y="6" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAIAAEAAAAAAAAQAgAAIAAgAAAACAAQAAQBA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAQBA=</HashCode>
       <FileName>C:\Users\adrie\Desktop\GIT_PROJECTS\SFML-GameFramework\include\Player.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GameFramework::PlayerCommand" Collapsed="true">
-    <Position X="2.75" Y="4.75" Width="1.5" />
+    <Position X="17" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>IAAAAAAAAAAAAAUAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
       <FileName>C:\Users\adrie\Desktop\GIT_PROJECTS\SFML-GameFramework\include\PlayerCommand.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GameFramework::Sprite" Collapsed="true">
-    <Position X="5" Y="3.25" Width="1.5" />
+    <Position X="19.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAgQAAAAAAEAAAAAAAAAAgAAAAAAAQAAAAAAAAAAI=</HashCode>
       <FileName>C:\Users\adrie\Desktop\GIT_PROJECTS\SFML-GameFramework\include\Sprite.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GameFramework::SpriteManager" Collapsed="true">
-    <Position X="7.25" Y="3.25" Width="1.5" />
+    <Position X="5.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAABAACAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>C:\Users\adrie\Desktop\GIT_PROJECTS\SFML-GameFramework\include\SpriteManager.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GameFramework::UserInterface" Collapsed="true">
-    <Position X="11.75" Y="3.25" Width="1.5" />
+    <Position X="10.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>EAQAAACACAAAAgAAAAAAAAAAACAAAEAAAAAAAAAAAAA=</HashCode>
       <FileName>C:\Users\adrie\Desktop\GIT_PROJECTS\SFML-GameFramework\include\UserInterface.h</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GameFramework::Window" Collapsed="true">
-    <Position X="16.25" Y="3.25" Width="1.5" />
+    <Position X="14.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>IAYAgAMCCAAAAAAIAACAAQIAAQCAAAAAQAABCBDAAAA=</HashCode>
       <FileName>C:\Users\adrie\Desktop\GIT_PROJECTS\SFML-GameFramework\include\Window.h</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="GameFramework::Drawable" Collapsed="true">
+    <Position X="1.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAABAAgAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>C:\Users\adrie\Desktop\GIT_PROJECTS\SFML-GameFramework\include\Drawable.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameFramework::Movable" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQAAAAAAIAAAAAAAACAAAAgAQIAAAQAAACwAAEAQAA=</HashCode>
+      <FileName>C:\Users\adrie\Desktop\GIT_PROJECTS\SFML-GameFramework\include\Movable.h</FileName>
+    </TypeIdentifier>
+  </Class>
   <Enum Name="GameFramework::Direction" Collapsed="true">
-    <Position X="21" Y="0.5" Width="1.5" />
+    <Position X="21.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
-      <FileName>C:\Users\adrie\Desktop\GIT_PROJECTS\SFML-GameFramework\include\Player.h</FileName>
+      <FileName>C:\Users\adrie\Desktop\GIT_PROJECTS\SFML-GameFramework\include\Movable.h</FileName>
     </TypeIdentifier>
   </Enum>
   <Font Name="Segoe UI" Size="9" />
