@@ -10,6 +10,7 @@ Game::Game() : Manager()
 
 Game::~Game()
 {
+	delete m_controller;
 }
 
 
@@ -33,6 +34,8 @@ void Game::Update()
 	m_gameInfo.Update();
 
 	m_window.Clear();
+
+	m_actorManager.Update();
 
 	m_actorManager.Draw(m_window);
 

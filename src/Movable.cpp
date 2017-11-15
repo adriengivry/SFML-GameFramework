@@ -5,6 +5,11 @@ using namespace GameFramework;
 void Movable::Update()
 {
 	Actor::Update();
+
+	if (IsPhysic())
+	{
+		GetSprite().GetSprite().move(0, GRAVITY_VELOCITY);
+	}
 }
 
 void Movable::SetDirection(const Direction p_direction)

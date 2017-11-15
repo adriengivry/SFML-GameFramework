@@ -6,6 +6,7 @@ Player::Player() : Movable()
 {
 	SetObjectType("PLAYER");
 	SetMaxSpeed(500);
+	m_isPhysic = false;
 }
 
 void Player::Tick()

@@ -12,6 +12,9 @@ ActorManager::~ActorManager()
 {
 	for (auto it = m_actors.begin(); it != m_actors.end(); ++it)
 	{
+		if (*it == &m_player)
+			return;
+
 		m_actors.erase(it);
 		delete *it;
 	}
@@ -21,6 +24,7 @@ void ActorManager::Setup()
 {
 	m_player.GetSprite().Load(LoadAsset("test.png"));
 	m_drawable.insert(std::pair<int, Drawable*>(1, &m_player));
+	m_actors.push_back(&m_player);
 }
 
 void ActorManager::Update()

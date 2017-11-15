@@ -4,7 +4,6 @@
 
 namespace GameFramework
 {
-
 	class Actor : public Object
 	{
 	public:

@@ -10,7 +10,7 @@
 
 namespace GameFramework
 {
-	class Game;
+	class Actor;
 
 	class ActorManager : public Manager
 	{

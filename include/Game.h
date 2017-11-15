@@ -5,8 +5,8 @@
 #include "UserInterface.h"
 #include "Window.h"
 #include "Manager.h"
-#include "Utility.h"
 #include "ActorManager.h"
+#include "Utility.h"
 
 
 namespace GameFramework
@@ -35,8 +35,8 @@ namespace GameFramework
 	private:
 		GameInfo m_gameInfo;
 		Window m_window;
-		ActorManager m_actorManager;
 		UserInterface m_userInterface;
+		ActorManager m_actorManager;
 		Controller* m_controller;
 	};
 }
