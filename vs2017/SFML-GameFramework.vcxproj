@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\Actor.cpp" />
+    <ClCompile Include="..\src\ActorManager.cpp" />
     <ClCompile Include="..\src\Controller.cpp" />
     <ClCompile Include="..\src\Game.cpp" />
     <ClCompile Include="..\src\GameInfo.cpp" />
@@ -36,6 +37,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\include\Actor.h" />
+    <ClInclude Include="..\include\ActorManager.h" />
     <ClInclude Include="..\include\Controller.h" />
     <ClInclude Include="..\include\Drawable.h" />
     <ClInclude Include="..\include\Game.h" />

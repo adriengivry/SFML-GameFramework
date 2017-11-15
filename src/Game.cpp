@@ -20,8 +20,6 @@ void Game::Setup()
 
 void Game::Run()
 {
-	m_player.GetSprite().Load(LoadAsset("test.png"));
-
 	while (m_window.IsOpen())
 	{
 		Update();
@@ -34,15 +32,11 @@ void Game::Update()
 
 	m_gameInfo.Update();
 
-	m_player.Update();
-
 	m_window.Clear();
 
-	Tick();
-	
-	m_window.DrawThing(m_player.GetSprite().GetSprite());
+	m_actorManager.Draw(m_window);
 
-	m_player.Draw(m_window);
+	Tick();
 
 	m_window.Display();
 	

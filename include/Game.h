@@ -6,12 +6,13 @@
 #include "Window.h"
 #include "Manager.h"
 #include "Utility.h"
+#include "ActorManager.h"
 
-#include "Player.h"
 
 namespace GameFramework
 {
 	class Controller;
+	class Player;
 
 	class Game : public Manager
 	{
@@ -26,16 +27,16 @@ namespace GameFramework
 		void Tick();
 		void Draw();
 
-		Player& GetPlayer() { return m_player; }
+		ActorManager& GetActorManager() { return m_actorManager; }
 		GameInfo& GetGameInfo() { return m_gameInfo; }
 		Window& GetWindow() { return m_window; }
+		Player& GetPlayer() { return m_actorManager.GetPlayer(); }
 
 	private:
 		GameInfo m_gameInfo;
 		Window m_window;
+		ActorManager m_actorManager;
 		UserInterface m_userInterface;
 		Controller* m_controller;
-
-		Player m_player;
 	};
 }
