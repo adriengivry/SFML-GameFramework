@@ -42,6 +42,8 @@ void Game::Update()
 	
 	m_window.DrawThing(m_player.GetSprite().GetSprite());
 
+	m_player.Draw(m_window);
+
 	m_window.Display();
 	
 }

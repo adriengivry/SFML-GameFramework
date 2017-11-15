@@ -27,7 +27,7 @@ namespace GameFramework
 		void Draw();
 
 		Player& GetPlayer() { return m_player; }
-
+		GameInfo& GetGameInfo() { return m_gameInfo; }
 		Window& GetWindow() { return m_window; }
 
 	private:

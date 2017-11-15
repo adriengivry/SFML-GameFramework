@@ -4,8 +4,6 @@
 
 namespace GameFramework
 {
-	
-
 	class Player : public Movable
 	{
 	public:

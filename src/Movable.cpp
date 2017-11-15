@@ -5,11 +5,6 @@ using namespace GameFramework;
 void Movable::Update()
 {
 	Actor::Update();
-
-	if (m_canMove)
-	{
-		Move();
-	}
 }
 
 void Movable::SetDirection(const Direction p_direction)
@@ -17,27 +12,38 @@ void Movable::SetDirection(const Direction p_direction)
 	m_direction = p_direction;
 }
 
-void Movable::StartMoving()
+void Movable::Move(const float p_deltaTime)
 {
-	switch (m_direction)
+	if (m_canMove)
 	{
-	case LEFT:
-		m_velocity.x = -m_maxSpeed;
-		break;
+		switch (m_direction)
+		{
+		case LEFT:
+			SetXVelocity(-m_maxSpeed);
+			SetYVelocity(0);
+			break;
 
-	case RIGHT:
-		m_velocity.x = m_maxSpeed;
-		break;
+		case RIGHT:
+			SetXVelocity(m_maxSpeed);
+			SetYVelocity(0);
+			break;
+
+		case UP:
+			SetXVelocity(0);
+			SetYVelocity(-m_maxSpeed);
+			break;
+
+		case DOWN:
+			SetXVelocity(0);
+			SetYVelocity(m_maxSpeed);
+			break;
+		}
+
+		GetSprite().GetSprite().move(m_velocity.x * p_deltaTime, m_velocity.y * p_deltaTime);
 	}
 }
 
-void Movable::StopMoving()
+void Movable::Draw(Window& p_window)
 {
-	m_velocity.x = 0;
-	m_velocity.y = 0;
-}
-
-void Movable::Move()
-{
-	GetSprite().GetSprite().move(m_velocity.x, m_velocity.y);
+	p_window.DrawThing(GetSprite().GetSprite());
 }

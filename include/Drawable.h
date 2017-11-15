@@ -2,6 +2,7 @@
 
 #include "Actor.h"
 #include "Sprite.h"
+#include "Window.h"
 
 namespace GameFramework
 {
@@ -13,6 +14,8 @@ namespace GameFramework
 		void Tick() override = 0;
 
 		Sprite& GetSprite() { return m_sprite; }
+
+		virtual void Draw(Window& p_window) = 0;
 
 	protected:
 		Sprite m_sprite;

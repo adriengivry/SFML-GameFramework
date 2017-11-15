@@ -8,6 +8,8 @@ namespace GameFramework
 	{
 		RIGHT,
 		LEFT,
+		UP,
+		DOWN
 	};
 
 	class Movable : public Drawable
@@ -20,21 +22,19 @@ namespace GameFramework
 		void Update() override;
 
 		void SetDirection(const Direction p_direction);
-
+		void SetMaxSpeed(const float p_maxSpeed) { m_maxSpeed = p_maxSpeed; }
 		void SetXVelocity(const float p_vx) { m_velocity.x = p_vx; }
 		void SetYVelocity(const float p_vy) { m_velocity.y = p_vy; }
 
-		void StartMoving();
-		void StopMoving();
+		void Move(const float p_deltaTime);
 
-		void Move();
+		void Draw(Window& p_window) override;
 	protected:
 		bool m_canMove = true;
 
-		Sprite m_sprite;
 		Direction m_direction = RIGHT;
 
-		float m_maxSpeed = 10;
+		float m_maxSpeed = 300;
 		sf::Vector2f m_velocity;
 
 	};

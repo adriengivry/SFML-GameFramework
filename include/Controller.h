@@ -5,12 +5,13 @@
 #include <SFML/Window/Event.hpp>
 
 #include "Manager.h"
-#include "PlayerCommand.h"
 #include "Game.h"
 
 namespace GameFramework
 {
 	class Game;
+
+	class Command;
 
 	class Controller : public Manager
 	{
@@ -18,7 +19,7 @@ namespace GameFramework
 		explicit Controller(Game* p_game);
 		virtual ~Controller();
 		
-		void BindCommand(const uint8_t p_key, ICommand* p_command);
+		void BindCommand(const uint8_t p_key, Command* p_command);
 
 		void Update() override;
 
@@ -27,6 +28,6 @@ namespace GameFramework
 
 		Game* m_game = nullptr;
 
-		std::map<uint8_t, ICommand*> m_commands;
+		std::map<uint8_t, Command*> m_commands;
 	};
 }

@@ -101,16 +101,13 @@
     <ClInclude Include="..\include\Sprite.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\ICommand.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\include\PlayerCommand.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="..\include\Drawable.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\include\Movable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Command.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
