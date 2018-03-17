@@ -10,3 +10,7 @@ After trying the Cinder library, I decided to come back to the SFML to create my
 ## Class diagram
 
 <img src="vs2017/ClassDiagram.png" alt="ClassDiagram">
+
+## Download
+
+- 64 bits : http://adrien-givry.com/download/sfml-game-framework-x86.zip
